@@ -1,0 +1,19 @@
+version: '3'
+services:
+  app:
+    image: nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
+    command: nvidia-smi
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              capabilities: [gpu]
+    build: ./
+    user: root
+    volumes:
+      - ./:/app
+    working_dir: /app
+    ports:
+      - 8888:8888
+    tty: true
