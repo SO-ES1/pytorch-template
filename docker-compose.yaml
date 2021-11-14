@@ -1,8 +1,8 @@
 version: '3'
 services:
   app:
+    container_name: 'template'
     image: nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
-    command: nvidia-smi
     deploy:
       resources:
         reservations:

@@ -1,6 +1,6 @@
 FROM nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
  
-ENV DEV="git curl wget build-essential gcc g++ make libffi-dev libssl-dev zlib1g-dev liblzma-dev libbz2-dev libreadline-dev libsqlite3-dev python3 python3-pip"
+ENV DEV="git curl wget build-essential gcc g++ make libffi-dev libssl-dev zlib1g-dev liblzma-dev libbz2-dev libreadline-dev libsqlite3-dev libgl1-mesa-dev libopencv-dev python3 python3-pip"
 ENV DEBIAN_FRONTEND=noninteractive
  
 RUN apt-get update && \
