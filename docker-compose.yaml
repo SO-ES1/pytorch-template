@@ -1,8 +1,13 @@
 version: '3'
 services:
   app:
+<<<<<<< HEAD
     container_name: 'template'
     image: nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
+=======
+    image: nvidia/cuda:11.1.1-cudnn8-devel-ubuntu20.04
+    command: nvidia-smi
+>>>>>>> 7eebb68acbf1865b009f5fa4175a9cd4c5bd14f5
     deploy:
       resources:
         reservations:
@@ -16,4 +21,8 @@ services:
     working_dir: /app
     ports:
       - 8888:8888
+<<<<<<< HEAD
     tty: true
+=======
+    tty: true
+>>>>>>> 7eebb68acbf1865b009f5fa4175a9cd4c5bd14f5
