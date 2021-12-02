@@ -12,7 +12,7 @@ RUN apt search python-is-python3 \
 
 ENV PYTHONUNBUFFERED=1 \
     POETRY_HOME="/opt/poetry" \
-    POETRY_VIRTUALENVS_CREATE=True
+    POETRY_VIRTUALENVS_CREATE=False
 
 ENV PATH="$POETRY_HOME/bin:$PATH"
 
