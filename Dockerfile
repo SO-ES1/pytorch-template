@@ -11,8 +11,7 @@ RUN apt search python-is-python3 \
    && apt-get -y install python3-distutils
 
 ENV PYTHONUNBUFFERED=1 \
-    POETRY_HOME="/opt/poetry" \
-    POETRY_VIRTUALENVS_CREATE=False
+    POETRY_HOME="/opt/poetry"
 
 ENV PATH="$POETRY_HOME/bin:$PATH"
 
